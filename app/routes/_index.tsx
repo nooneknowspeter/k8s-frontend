@@ -6,7 +6,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
+const Index = () => {
   const getAllPlatforms = async () => {
     try {
       const request = await fetch(platformsProductionURL, {
@@ -85,5 +85,5 @@ export default function Index() {
 
   return (
       </div>
-    </div>
   );
+export default Index;
