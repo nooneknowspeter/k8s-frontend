@@ -1,8 +1,8 @@
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "K8s Microservices" },
+    { name: "k8s-microservices", content: "K8s Microservices" },
   ];
 };
 
