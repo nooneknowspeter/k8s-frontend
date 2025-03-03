@@ -7,6 +7,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "~/components/ui/select"
+import JSONPretty from 'react-json-pretty';
+
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
@@ -317,6 +319,26 @@ const Index = () => {
           }
         </div>
       </div>
+
+      {/* pretty print json */}
+      {!(data == "") ?
+        <div className="flex flex-col gap-6 transition-all justify-center place-items-center">
+          {!(data == "empty") ?
+            <>
+              <h1>Requested Data</h1>
+              <br />
+              <JSONPretty id="json-pretty" data={data}></JSONPretty>
+            </>
+            :
+            <>
+              <h1>Received Empty Data</h1>
+              <br />
+            </>
+          }
+        </div >
+        :
+        <></>
+      }
     </>
   );
 };
