@@ -49,8 +49,8 @@ const Index = () => {
   const [service, setService] = useState("")
   const [data, setData] = useState("")
 
-  const platformsProductionURL = "http://platforms-clusterip-service:5044/api/platforms"
-  const commandsProductionURL = "http://commands-clusterip-service:5108/api/commands/platforms"
+  const platformsProductionURL = "http://platforms-clusterip-service:8080/api/platforms"
+  const commandsProductionURL = "http://commands-clusterip-service:8080/api/commands/platforms"
 
   const platformsDevURL = "http://localhost:5044/api/platforms"
   const commandsDevURL = "http://localhost:5108/api/commands/platforms"
