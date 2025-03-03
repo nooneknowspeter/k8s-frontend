@@ -84,6 +84,9 @@ const Index = () => {
   }
 
   return (
+          {service == "platform-service" ? <Button variant="outline" onClick={getAllPlatforms}>Get All Platforms</Button> : <></>}
+
+          {service == "commands-service" ? <Button variant="outline" onClick={getAllCommands}>Get All Commands</Button> : <></>}
       </div>
   );
 export default Index;
